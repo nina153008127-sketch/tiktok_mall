@@ -3,6 +3,10 @@ const app = express();
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("WORKING ✅");
+});
+
 let users = [];
 
 // ================= REGISTER API =================
@@ -945,10 +949,6 @@ indicator.style.width = (percent * 100 + 20) + "%";
 function goRecharge(){
     window.location.href = "/recharge";
 }
-
-app.get("/", (req, res) => {
-  res.send("TikTok Mall is running 🚀");
-});
 
 </script>
 
