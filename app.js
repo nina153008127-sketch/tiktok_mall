@@ -946,6 +946,10 @@ function goRecharge(){
     window.location.href = "/recharge";
 }
 
+app.get("/", (req, res) => {
+  res.send("TikTok Mall is running 🚀");
+});
+
 </script>
 
 </body>
